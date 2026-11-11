@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 5%;                
+  width: 100%;
+  box-sizing: border-box;       
+  height: 80px;                 
+  background-color: rgb(24, 24, 24);
+  align-items: center;
+}
+
+#navBar #logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+#navBar img {
+  width: 50px; 
+  height: 50px;
+}
+
+#navigate {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px; 
+}
+
+#navigate a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#navigate a:hover {
+  color: orangered; 
+}
+
+#headers {
+  height: 600px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;             
+  margin: 0 auto;                
+  padding: 0 40px;
+  font-size: 40px;
+  color: orangered;
+  border-bottom: 1px solid rgb(44, 44, 44);
+}
+
+#head h1 {
+  line-height: 1.2;
+}
+
+
+
+#card {
+  width: 700px;       
+  height: 400px;
+  position: relative;
+  overflow: hidden;   
+  border-radius: 12px;
+}
+
+#cards {
+  gap: 20px;
+  display: flex;
+  width: 2120px;      
+  height: 100%;
+  position: absolute; 
+  left: 0;
+  top: 0;
+  animation: slide_animation 12s infinite ease-in-out;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+#cards img {
+  width: 720px;       
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+@keyframes slide_animation {
+  0%, 25%    { left: 0; }         
+  33%, 58%   { left: -720px; }    
+  66%, 91%   { left: -1420px; }   
+  100%       { left: 0; }         
+}
+
+
+#redirect {
+  display: block;
+  margin: 60px auto;
+  width: 240px;
+  height: 60px;       
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;    
+  transition: transform 0.5s, background-color 0.2s;
+}
+
+#redirect:hover {
+  background-color: #ff5722;
+  transform: scale(1.05); 
+}
