@@ -44,6 +44,12 @@ INSTALLED_APPS = [
 
     # Our apps
     'users',
+    "games",
+    "venues",
+    "sports",
+    "profiles",
+    "participation",
+    "verification",
 ]
 
 MIDDLEWARE = [
@@ -138,9 +144,15 @@ AUTHENTICATION_BACKENDS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ],
 
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
+    ],
+
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
     ],
 }
