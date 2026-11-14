@@ -27,4 +27,10 @@ urlpatterns = [
     path('api/sports/', include('sports.urls')),
     path('api/participation/', include('participation.urls')),
     path('api/verification/', include('verification.urls')),
+    path('api/ratings/', include('ratings.urls')),
+    path('api/notifications/', include('notifications.urls')),
+    path('api/safety/', include('safety.urls')),
+    path('api/organizers',include('organizers.urls')),
+    path('api/subscriptions/', include('subscriptions.urls')),
+    path('api/bookings/', include('bookings.urls')),
 ]

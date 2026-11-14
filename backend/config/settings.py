@@ -50,6 +50,12 @@ INSTALLED_APPS = [
     "profiles",
     "participation",
     "verification",
+    "ratings",
+    "notifications",
+    "safety",
+    "organizers",
+    "subscriptions",
+    "bookings",
 ]
 
 MIDDLEWARE = [
