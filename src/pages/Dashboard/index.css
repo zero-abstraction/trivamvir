@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  font-family: "Montserrate", sans-serif;
+}
+body{
+  margin: 0 auto;
+  background-color: black;
+}
+#nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(23,23,23);
+  width: auto;
+}
+#nav-bar header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#nav-bar header img{
+  width: 5rem;
+  height: 5rem;
+}
+#nav-bar header h1{
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  color: white;
+}
+#nav-bar div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 33%;
+}
+#nav-bar a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+#nav-bar a:hover{
+  color: orangered;
+}

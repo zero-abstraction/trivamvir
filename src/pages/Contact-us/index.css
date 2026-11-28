@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: black;
+    margin: 0 auto;
+}
+
+#nav-bar{
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: rgb(23,23,23);
+}
+
+#nav-bar nav a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+#nav-bar nav a:hover{
+    color: orangered;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    height: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: white;
+    max-width: 90%;
+    
+}
+#form textarea{
+    width: 100%;
+    resize: vertical;
+    min-height: 30dvh;
+    height: auto;
+    border: none;
+    background-color: rgb(23,23,23);
+    color: white;
+    border-radius: 10px;
+}
+#form button{
+    margin-top: 3vw;
+    width: 20vw;
+    height: 5vw;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
